@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering @ banû</title>
+    <link rel="icon" type="image/png" href="Images/banuFavicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="Images/banuText.png" alt="banû logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Overview</a>
+                <a href="innovations.html">Innovations</a>
+                <a href="engineering.html" class="active">Engineering</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-header">
+        <div class="container">
+            <span class="badge">Hardware & Systems Engineering</span>
+            <h1>Engineering @ banû</h1>
+            <p style="color: #94a3b8; font-size: 1.15rem; max-width: 800px; font-weight: 300;">
+                We design custom sensor hardware, FPGA-accelerated edge inference engines, and spatial SLAM algorithms from the silicon level up to operate without cloud or GPS connectivity.
+            </p>
+
+            <!-- Interactive Schematic Canvas -->
+            <div class="diagram-container">
+                <div class="diagram-header">
+                    <span class="diagram-title">Resku // Hardware Breadboard & Sensor Bus Topology</span>
+                    <span class="diagram-title" style="color: #4898ab;">Real-Time Telemetry Feed</span>
+                </div>
+                <canvas id="schematicCanvas"></canvas>
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <h3>Silicon & FPGA Edge Compute</h3>
+                    <p>Low-power onboard processing running deterministic neural networks directly on the sensor node for zero-latency detection.</p>
+                </div>
+                <div class="spec-card">
+                    <h3>Sensor Fusion Architecture</h3>
+                    <p>Synchronizing high-density LiDAR point-clouds with LWIR thermal arrays to map occluded structural interiors in real-time.</p>
+                </div>
+                <div class="spec-card">
+                    <h3>Tactical Mesh Networking</h3>
+                    <p>Ad-hoc peer-to-peer RF relays maintaining continuous biometric and spatial telemetry streams deep inside reinforced concrete buildings.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <img src="Images/banuText.png" alt="banû logo" class="footer-logo">
+            <p>&copy; 2026 banû. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
