@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resku Specifications | banû</title>
+    <link rel="icon" type="image/png" href="../Images/banuFavicon.png">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <img src="../Images/banuText.png" alt="banû logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="../index.html">Overview</a>
+                <a href="../innovations.html">Innovations</a>
+                <a href="../engineering.html">Engineering</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-header">
+        <div class="container" style="max-width: 1000px;">
+            <a href="../innovations.html" style="color: #4898ab; text-decoration: none; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 2rem; display: inline-block;">&larr; Back to Systems</a>
+            
+            <div style="display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem;">
+                <img src="../Images/reskuLogo.png" alt="Resku Logo" style="height: 50px; width: auto;">
+                <div>
+                    <span class="system-tag" style="margin-bottom: 0.25rem;">Tactical Response Hardware</span>
+                    <h1 style="font-size: 3rem; margin: 0; color: #ffffff;">Resku</h1>
+                </div>
+            </div>
+
+            <p style="color: #94a3b8; font-size: 1.15rem; margin-bottom: 3rem; font-weight: 300; line-height: 1.7;">
+                Resku resolves communication and spatial blind spots in structural fires and collapsed buildings. By combining high-density LiDAR SLAM with localized thermal fusion and biometric monitoring, Resku maintains operational awareness in zero-visibility zones.
+            </p>
+
+            <div class="diagram-container">
+                <div class="diagram-header">
+                    <span class="diagram-title">Resku // Hardware Breadboard & Sensor Architecture</span>
+                    <span class="diagram-title" style="color: #4898ab;">Live Telemetry Active</span>
+                </div>
+                <canvas id="schematicCanvas"></canvas>
+            </div>
+
+            <div class="spec-grid">
+                <div class="spec-card">
+                    <h3>LiDAR Spatial SLAM</h3>
+                    <p>Constructs centimeter-grade 3D point-cloud interior models without relying on GPS or external network infrastructure.</p>
+                </div>
+                <div class="spec-card">
+                    <h3>Thermal Sensor Fusion</h3>
+                    <p>Edge-processed computer vision separates human heat signatures through dense smoke and structural debris.</p>
+                </div>
+                <div class="spec-card">
+                    <h3>Responder Telemetry</h3>
+                    <p>Tracks live core vitals and environmental exposure thresholds to alert incident commanders prior to exhaustion.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <img src="../Images/banuText.png" alt="banû logo" class="footer-logo">
+            <p>&copy; 2026 banû. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
